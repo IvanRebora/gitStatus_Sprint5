@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+<%- include('partials/head') %>
+    <!--Header-->
+<body>
+
+    <%- include('partials/header') %>
+      <!--Main-->
+
+      <main>
+        <article class="form-container">
+            <form method="POST" action="/products/<%=  product.id %>?_method=PUT" class="register-form">
+                <div>
+                    <div class="titulo-create">CREAR PRODUCTO</div>    
+                    <div class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Nombre Producto:" value="<%= product.name : '' %>" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="retailer" id="retailer" placeholder="Nombre de Marca:" value="<%= product.retailer : '' %>" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="description" id="description" placeholder="Descripcion del Producto:" value="<%= product.description : '' %>" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <label>Categoría Relevante:</label>
+                        <div class="interests">
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Videojuegos" id="Videojuegos">
+                                <label for="home">Anime</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Anime" id="Anime">
+                                <label for="toys">Videojuegos</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Cine" id="Cine">
+                                <label for="healthy">Cine</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Imagen de Producto:</label>
+                        <div class="img">
+                            <img src=" ">
+                        </div>
+                        <input type="file" id="image" name="image" value="<%= product.image : '' %>" accept="image/png, image/jpeg" class="form-control-btn">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="price" id="price" placeholder="Precio:" value="<%= product.price : '' %>" class="control" required="">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="discount" id="discount" placeholder="Descuento:" value="<%= product.discount : '' %>" class="control" required="">
+                    </div>
+                    <div class="form-control buttons">
+                        <input type="submit" value="Crear" class="submit-button-form">
+                    </div>
+
+                </div>
+            </form>
+        </article>
+    </main>
+
+
+        <!--FOOTER-->
+
+        <%- include('partials/footer') %>
+    
+</body>
+</html>

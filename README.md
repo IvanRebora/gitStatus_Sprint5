@@ -1,0 +1,2 @@
+"Nuestro proceso de desarollo fue increiblemente mas activo con mejoras en la cooperacion y ayuda mutua, con casi ningun choque tecnico o creativo. 
+Dificultades tecnicas imprevistas siguen siendo nuestro mayor adversario, que demandan mas ojo atento."

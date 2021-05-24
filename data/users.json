@@ -1,0 +1,96 @@
+[
+ {
+  "name": "Pepe alfonso",
+  "email": "ivan.rebora@hotmail.com",
+  "dateBrith": "2021-04-05",
+  "address": "Olleros 1768",
+  "interests": "Videojuegos",
+  "fileavatar": "",
+  "password": "1234",
+  "confirmpass": "1234",
+  "id": 4
+ },
+ {
+  "name": "jose alvarez",
+  "email": "jose@gmail.com",
+  "dateBrith": "2021-03-29",
+  "address": "Olleros 1768",
+  "interests": "Videojuegos",
+  "fileavatar": "",
+  "password": "1234",
+  "confirmpass": "1234",
+  "id": 5
+ },
+ {
+  "id": 6
+ },
+ {
+  "id": 7
+ },
+ {
+  "name": "ivan",
+  "email": "ivan.rebora@hotmail.com",
+  "dateBrith": "2021-03-02",
+  "address": "Olleros 1768",
+  "interests": "Cine",
+  "fileavatar": "logInMobile.jpg",
+  "password": "1234",
+  "confirmpass": "1234",
+  "id": 8
+ },
+ {
+  "name": "martin",
+  "email": "fvranaa@gmail.com",
+  "dateBrith": "2021-05-21",
+  "address": "askks 567",
+  "interests": "Anime",
+  "fileavatar": "",
+  "password": "12345",
+  "confirmpass": "12345",
+  "id": 9
+ },
+ {
+  "name": "martin",
+  "email": "parma.marina@gmail.com",
+  "dateBrith": "2021-05-22",
+  "address": "askks 567",
+  "interests": "Cine",
+  "fileavatar": "1 (1).jpg",
+  "password": "12345",
+  "confirmpass": "12345",
+  "id": 10
+ },
+ {
+  "name": "lola loppez",
+  "email": "ivan.rebora@hotmail.com",
+  "dateBrith": "2021-05-02",
+  "address": "Olleros 1768",
+  "interests": "Videojuegos",
+  "fileavatar": "18 Ivan Rebora .jpeg",
+  "password": "1234",
+  "confirmpass": "1234",
+  "id": 11
+ },
+ {
+  "name": "12344444",
+  "email": "ivan.rebora@hotmail.com",
+  "dateBrith": "2021-05-02",
+  "address": "12345",
+  "interests": "Anime",
+  "fileavatar": "",
+  "password": "$2a$10$GHXx9CRGEdGdQEEysrheT.X8hpHRnkCDe9SBfFlh0Im/yfKwyyYcS",
+  "confirmpass": "1234",
+  "id": 12
+ },
+ {
+  "name": "ivan",
+  "email": "alfio104@hotmail.com",
+  "dateBrith": "2021-05-02",
+  "address": "Olleros 1768",
+  "interests": "Videojuegos",
+  "fileavatar": "",
+  "password": "$2a$10$Q658Uy4KXeHMJQu76Xu1nOMmNv4iJ8d.dSXvXbZkaEQIHzYNPa9qa",
+  "confirmpass": "$2a$10$Q658Uy4KXeHMJQu76Xu1nOMmNv4iJ8d.dSXvXbZkaEQIHzYNPa9qa",
+  "id": 13
+ }
+]

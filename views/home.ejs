@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+  
+
+    <main>
+
+
+
+
+        <!--Sección de Productos-->
+        <section class=" contenido ">
+            <% products.forEach(product => { %>
+                <%- include('partials/product', { product }) %>
+            <% })%>
+        </section>
+        <section class="contenido2 ">
+            <% products.forEach(product => { %>
+                <%- include('partials/product', { product }) %>
+            <% })%>
+            </a>
+        </section>
+        <section class="contenido3 ">
+            <% products.forEach(product => { %>
+                <%- include('partials/product', { product }) %>
+            <% })%>
+        </section>
+
+
+    </main>
+
+    <!--FOOTER-->
+
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>

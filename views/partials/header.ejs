@@ -1,0 +1,102 @@
+<header>
+
+    <!--LOGO-->
+    <div class="top-header">
+
+        <img src="/images/logo.png" width="20%" class="logo" href="./">
+
+    </div>
+    <!--LOGO-->
+    <nav>
+        <nav class="categorias" alt="Categorias">
+            <ul>
+
+                <li id="categ">
+
+                    <div class="subnav">
+                        <button class="subnavbtn">Categorías <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="#">Anime</a>
+                            <a href="#">Videojuegos</a>
+                            <a href="#">Cine</a>
+                            <a href="#">Cómics</a>
+                            <a href="#">Shows</a>
+
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <a href="/#">
+                        <i class="fas fa-home"></i>
+                        <tag>Inicio</tag>
+                    </a>
+                </li>
+
+
+
+
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Buscar..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <% if (locals.isLogged) { %>
+                <li>
+
+                    <a href="/products/create">
+                       <i class="fas fa-plus-circle"></i>
+                        <tag>Crear</tag>
+                    </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/images/users/<%= locals.userLogged.fileavatar %>" width="40" style="border-radius: 100%;">
+                        Hi <%= locals.userLogged.fullName %> 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/user/profile">My profile</a>
+                        <li><hr class="dropdown-divider"></li>
+                        <a class="dropdown-item" href="/user/logout">Logout</a>
+                    </ul>
+                </li>
+            <% } else { %>
+
+                
+                <li>
+                    <a href="/login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <tag>Ingresá</tag>
+                    </a>
+                </li>
+                <li>
+                    <a href="/register">
+                        <i class="fas fa-user-plus"></i>
+                        <tag>Registrate</tag>
+                    </a>
+                </li>
+                <li>
+
+                    <a href="/products/cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <tag>Carrito</tag>
+                    </a>
+
+                </li>
+
+                <% } %>
+
+
+
+
+
+                <!--íconos del nav-bar-->
+
+
+            </ul>
+        </nav>
+</header>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+  
+
+    <main>
+
+
+    <main>
+        <article class="form-container">
+            <form method="POST" action="/store" class="register-form">
+                <div>
+                    <div class="titulo-register">REGISTRATE</div>
+                    <div class="ya-tenes"><a href=login.html> Si ya tienes cuenta ingresa ahora</a></div>
+                    <div class="form-control">
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido:" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="email" id="email" placeholder="Correo electrónico:" required="" class="control">
+                        <span class="Feedback"></span>
+                    </div>
+                    <div class="form-control">
+                        <label for="dateBrith">Fecha de Nacimiento:</label>
+                        <input type="date" name="dateBrith" id="dateBrith" class="control">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="address" id="address" placeholder="Domicilio:" class="control">
+                    </div>
+                    <div class="form-control">
+                        <label>Categorías de Interés:</label>
+
+                        <div class="interests">
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Videojuegos" id="Videojuegos">
+                                <label for="home">Anime</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Anime" id="Anime">
+                                <label for="toys">Videojuegos</label>
+                            </div>
+                            <div class="interest-option">
+                                <input type="checkbox" name="interests" value="Cine" id="Cine">
+                                <label for="healthy">Cine</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label>Imagen de perfil:</label>
+                        <div class="img">
+                            <img src=" ">
+                        </div>
+                        <input type="file" id="fileavatar" name="fileavatar" accept="image/png, image/jpeg" class="form-control-btn">
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="password" id="password" placeholder="Contraseña:" class="control" required="">
+                    </div>
+                    <div class="form-control">
+                        <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirmar contraseña:" class="control" required="">
+                    </div>
+                    <div class="form-control buttons">
+                        <input type="submit" value="Enviar" class="submit-button-form">
+                        <input type="reset" value="Limpiar" class="button-form">
+                    </div>
+
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <%- include('partials/footer') %>
+
+
+
+</body>
+
+</html>

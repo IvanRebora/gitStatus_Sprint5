@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+  
+
+    <main>
+        <div class="descriptionContainer">
+        <!--Showcase del Producto-->
+        <section class="productDescription">
+            <div class="producto">
+                <p class="nameProd"><%= product.name %></p>
+                <p class="marca"><%= product.retailer %></p>
+            </div>
+            <div class="fotos">
+                <img src="/images/<%= product.image %>" width="24%" class="principalImg" alt="3">
+
+            </div>
+
+        </section>
+        <div class="informa">
+            <p class="precios">$<%= product.price %></p>
+            <p class="adding">Añadir al Carrito <i class="fas fa-cart-plus"> </i> </p>
+
+            <p class="estado">NUEVO</p>
+            <br>
+            <p class="stock">En Stock</p>
+            <br>
+            <p class="description"><%= product.description %> </p>
+        </div>
+    </div>
+    <form class="form is-inline" action="/products/<%= product.id %>?_method=DELETE" method="POST">
+        <button type="submit" class="button is-danger">Borrar</button>
+    </form>
+    <a href="/products/<%= product.id %>/edit" class="button is-success">Editar</a>
+
+
+
+    </main>
+
+    <%- include('partials/footer') %>
+
+</html>
