@@ -1,2 +1,1 @@
-"Nuestro proceso de desarollo fue increiblemente mas activo con mejoras en la cooperacion y ayuda mutua, con casi ningun choque tecnico o creativo. 
-Dificultades tecnicas imprevistas siguen siendo nuestro mayor adversario, que demandan mas ojo atento."
+"Un miembro del equipo no pudo asistir y tuvimos que adaptarnos. El proceso de log in nos fue lo que nos mas complico. En este sprint pudimos juntarnos mas veces para resolverlo y tuvimos mejor organizacion."
